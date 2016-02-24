@@ -429,8 +429,7 @@ class CustomAlerts extends PluginBase {
      * @param Player $player
      */
     public function registerFirstJoin(Player $player){
-    	$cfg = new Config($this->getDataFolder() . "data/" . strtolower($player->getName() . ".dat"));
-    	$cfg->save();
+    	return;
     }
     
     /**
@@ -441,11 +440,15 @@ class CustomAlerts extends PluginBase {
      * @return boolean
      */
     public function hasJoinedFirstTime(Player $player){
+        /*
     	if(file_exists($this->getDataFolder() . "data/" . strtolower($player->getName() . ".dat"))){
     		return false;
     	}else{
     		return true;
     	}
+        
+        */
+        return false;
     }
     
     /**
